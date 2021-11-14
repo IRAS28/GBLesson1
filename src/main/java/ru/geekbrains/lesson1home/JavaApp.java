@@ -25,7 +25,20 @@ public class JavaApp {
     public static float floatRes(float a, float b, float c, float d) {
         return a * (b + (c / d));
     }
+    
+    // Здесь можно было просто вернуть результат как и в прошлом методе
+    // Немного не понятен смысл переменной "boo", её наличие только путает)
+    //public static boolean sum10and20(int a1, int b1) {
+    //    if ((a1 + b1) >= 10 & (a1 + b1) <= 20) {
+    //        return true;
+    //    } else {
+    //        return false;
+    //    }
+    // }
+    
     public static boolean sum10and20(int a1, int b1) {
+        //оператор & редко применяется, так как условие "if ()" подразумевает логический результат, лучше использовать всегда "&&"
+        //немного ввело в ступор даже когда увидел его)
         if ((a1 + b1) >= 10 & (a1 + b1) <= 20) {
             return boo = true;
         } else {
@@ -39,6 +52,8 @@ public class JavaApp {
             System.out.println(x+" "+"(это число положительное)");
         }
     }
+    
+    //Здесь так же можно было просто вернуть результат без использования "boo" переменной)
     public static boolean isNegative(int x) {
         if (x<0) {
             return boo=true;
@@ -52,7 +67,7 @@ public class JavaApp {
     public static void leapYear(int x){
         int a1=x%4;
         int b1=x%100;
-        int d1=x%400;
+        int d1=x%400;       
         if (a1!=0 || (b1==0 && d1!=0)) {
             System.out.println(x+" "+"- невисокосный год");
         } else {
