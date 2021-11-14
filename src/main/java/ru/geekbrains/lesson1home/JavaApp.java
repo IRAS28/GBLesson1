@@ -34,7 +34,7 @@ public class JavaApp {
     }
     public static void isPositiveOrNegative(int x) {
         if (x < 0) {
-            System.out.println(x+" "+"(это число отрицательное)");
+            System.out.println(x+" "+"(введённое число отрицательное)");
         } else {
             System.out.println(x+" "+"(это число положительное)");
         }
