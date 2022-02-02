@@ -14,7 +14,7 @@ public class JavaApp {
         boolean booleanVal = true;
         char[] chars = {'H', 'E', 'L', 'L', 'O'};
         System.out.println(chars);
-        System.out.println(floatRes(0.5f, 1f, 20.5f, 4f));
+        //System.out.println("floatRes = "+floatRes( 0.5f, 1f, 20.5f, 4f));
         System.out.println(sum10and20(11, 5)+" "+"(true, если сумма в диапазоне [10;20])");
         isPositiveOrNegative(15);
         System.out.println(isNegative(100)+" "+"(true-введенное число отрицательное, false-положительное)");
@@ -23,6 +23,7 @@ public class JavaApp {
     }
     public static float floatRes(float a, float b, float c, float d) {
         return a * (b + (c / d));
+        System.out.println("floatRes"+floatRes(0.5f, 1f, 20.5f, 4f));
     }
     public static boolean sum10and20(int a1, int b1) {
         if ((a1 + b1) >= 10 && (a1 + b1) <= 20) {
